@@ -1,0 +1,23 @@
+# NIM : 221511016
+# Nama : Ziarotun Ni'mah
+# Kelas : TI21K
+
+class keltemp:
+    def __init__(self, kelvin):
+        self.kelvin = kelvin
+
+    def celcius(self):
+        return (self.kelvin - 273) 
+    def fahrenheit(self):
+        return 9/5 * (self.kelvin - 273) + 32
+    def reamur(self):
+        return 4/5 * (self.kelvin - 273)
+    
+    print("Suhu Kelvin")
+kel1 = keltemp(30)
+print(f"Konversi dari Kelvin ke Celcius: {kel1.celcius()}")
+kel2 = keltemp(34)
+print(f"Konversi dari Kelvin ke Fahrenheit: {kel2.fahrenheit()}")
+kel3 = keltemp(38)
+print(f"Konversi dari Kelvin ke Reamur: {kel3.reamur()}")
+
